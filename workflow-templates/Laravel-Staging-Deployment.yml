@@ -1,0 +1,14 @@
+name: Staging Deployment
+
+on: 
+  workflow_dispatch:
+  
+  push:
+    branches:
+      - 'dev'
+
+
+jobs:
+  DeployStaging:
+    uses: 34ML/Actions-Config/.github/workflows/Laravel-Server-Deployment.yml@master
+    secrets: inherit # pass all secrets
