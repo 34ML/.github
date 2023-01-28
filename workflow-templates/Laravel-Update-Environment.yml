@@ -1,0 +1,11 @@
+name: Update Production Environment Variables
+
+on: 
+  # Allows for manual trigger of workflow
+  workflow_dispatch:
+  
+
+jobs:
+  UpdateEnv:
+    uses: 34ML/Actions-Config/.github/workflows/Laravel-ECS-Update-Environment.yml@master
+    secrets: inherit # pass all secrets

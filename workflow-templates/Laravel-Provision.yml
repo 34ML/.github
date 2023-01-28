@@ -1,0 +1,17 @@
+name: Provision
+
+on: 
+  workflow_dispatch:
+    inputs:
+      action:
+        type: choice
+        description: Action for Terraform
+        options: 
+        - plan
+        - apply
+        - destroy  
+
+jobs:
+  Terraform:
+    uses: 34ML/Actions-Config/.github/workflows/Laravel-Provision.yml@master
+    secrets: inherit # pass all secrets

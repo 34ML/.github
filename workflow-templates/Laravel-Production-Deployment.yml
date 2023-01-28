@@ -1,0 +1,16 @@
+name: Production Deployment
+
+on: 
+  # Triggers the workflow on the schedule
+  schedule:
+    - cron: '0 9 * * 0'
+  # Allows for manual trigger of workflow
+  workflow_dispatch:
+  
+
+jobs:
+  Build-Update:
+    uses: 34ML/Actions-Config/.github/workflows/Laravel-ECS-Deployment.yml@master
+    with:
+      docker-image: ghcr.io/34ml/docker-laravel:php-7.4-composer-2.0-node-14.15.5
+    secrets: inherit # pass all secrets
