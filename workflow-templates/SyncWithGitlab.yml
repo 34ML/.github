@@ -1,0 +1,17 @@
+name: Gitlab Sync
+
+on: 
+  workflow_dispatch:
+  
+  # push:
+  #   branches:
+  #     - 'dev'
+  #     - 'master'
+
+
+jobs:
+  GitLabSync:
+    uses: 34ML/Actions-Config/.github/workflows/SyncWithGitlab.yml@master
+    with:
+      repo-url: 'REPO_URL'
+    secrets: inherit # pass all secrets
