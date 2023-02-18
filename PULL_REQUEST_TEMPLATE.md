@@ -1,16 +1,4 @@
-## Description
-<!-- Describe your changes in detail. The sections suggested are intended to make -->
-<!-- it easy to create a descriptive PR that is easy to review. Change as needed! -->
+Please go the the `Preview` tab and select the appropriate sub-template:
 
-## Motivation / Context
-<!-- Why is this change required? What problem does it solve? -->
-<!-- If it fixes or is related to an open issue, link to the issue here. -->
-
-## Testing Instructions / How This Has Been Tested
-<!-- Describe how you tested your changes and/or how a reviewer can test your changes. -->
-
-## Screenshots
-<!-- Would including screenshots be helpful to the reviewer? -->
-
-## Documentation
-<!-- Do any of the changes warrant documentation updates? -->
+* [Group A](?expand=1&template=group_a_template.md)
+* [Group B](?expand=1&template=group_b_template.md)
